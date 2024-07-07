@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+   
+    <title>Chatbot Support</title>
+ 
+    <link rel="stylesheet" href="https://askelliebots.blob.core.windows.net/askelliefiles/widget-styles-797.css"> 
+  
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
+    <script>
+        var chatbotId = "797"; // JavaScript variable to hold chatbot ID
+    </script>
+</head>
+<body>
+
+    <div id="chat-widget-container" class="chat-widget-closed">
+        
+        <img src="/static//images/agent.png" alt="Chat Agent" id="chat-agent-pic">
+
+
+        
+        <div id="chat-widget-header">
+            <div id="chat-widget-title">Customer Support</div>
+
+
+            <!--<div id="chat-widget-title">Customer Support</div> -->
+        </div>
+        <!-- ... existing header content ... -->
+        <div id="chat-messages-container">
+            <div id="typing-indicator" class="chat-message bot-message" style="display: none;">
+                <span id="typing-dots">typing</span>
+            </div>
+            
+            <!-- Chat messages will be dynamically inserted here -->
+        </div>
+        <div id="chat-widget-form-container">
+            <form id="chat-widget-form">
+                <input type="text" id="chat-widget-input" placeholder="Send a message..." autocomplete="off" required>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32" class="send-icon" onclick="sendMessage(event)">
+                    <path d="M3.75 26.6666V18.6666L13.75 16L3.75 13.3333V5.33331L27.5 16L3.75 26.6666Z" fill="#545CFF"/>
+                </svg>
+                
+                
+            </form>
+        
+        </div>
+        <div id="promo-link-container">
+            <a id="video-link" href="https://www.askellie.online" target="_blank">Free Chatbots powered by <span>AskEllie</span></a>
+        </div>
+        
+    </div>
+
+    <script src="/static/widget-script.js"></script>
+
+  
+</body>
+</html>
